@@ -11,7 +11,7 @@ layout: default
 	<!-- Posts List -->
 	{% assign category = page.category | default: page.title %}
 	<li>
-		<h1> {{ categories[category]}} </h1>
+		<h1> {{ category }} </h1>
 	</li>
   {% for post in site.categories[category] %}
     <li>
