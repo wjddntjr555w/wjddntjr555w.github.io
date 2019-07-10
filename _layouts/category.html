@@ -10,9 +10,8 @@ layout: default
 	{%- endif -%}
 	<!-- Posts List -->
 	{% assign category = page.category | default: page.title %}
-	<li>
-		<h1> {{ category }} </h1>
-	</li>
+	<h1> {{ category }} </h1>
+
   {% for post in site.categories[category] %}
     <li>
 			<h2>
@@ -20,7 +19,8 @@ layout: default
           {{ post.title }}
         </a>
 			</h2>
-      {{" ----- "}} {{ post.date | date_to_string }}
+      {{ post.date | date_to_string }}
     </li>
   {% endfor %}
+
 </div>
