@@ -10,10 +10,10 @@ layout: default
 	{%- endif -%}
 	<!-- Posts List -->
 	{% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
 	<li>
 		<h1> {{ categories[category]}} </h1>
 	</li>
+  {% for post in site.categories[category] %}
     <li>
 			<h2>
         <a href="{{ site.baseurl }}{{ post.url }}">
