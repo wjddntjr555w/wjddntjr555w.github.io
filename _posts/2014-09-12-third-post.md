@@ -5,6 +5,7 @@ layout: post
 icon: fa-lightbulb
 icon-style: regular
 categories : nodejs
+tags : nodejs
 ---
 See the icon?
 
